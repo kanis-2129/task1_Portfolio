@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+
+:root {
+  --primary-color: #3e7606;
+  --secondary-color: #5e5b04;
+
+  --accent-color: #e74c3c;
+  --primary-text-color: #1b3502;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+ padding: 10px;
+  background:rgb(167, 248, 176 0.15);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(178, 252, 6, 0.712);
+  box-shadow: 0 4px 30px rgba(123, 150, 3, 0.632);
+}
+
+#nav-li {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+   margin: 0px 25px;
+}
+
+header p {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border: 2px solid rgb(3, 110, 3);
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: rgb(250, 214, 9);
+  margin-left: 20px;
+}
+
+#nav-li li a {
+  color: rgb(5, 132, 5);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#nav-li li a:hover {
+  background-color: rgb(246, 254, 247);
+}
+
+/* Home Screen */
+
+#home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-header h1 {
+  padding: 20px 5px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.home-header strong {
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.header-name {
+  color: var(--primary-text-color);
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.home-header p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(98, 97, 97);
+  padding-top: 10px;
+}
+
+.profile-pic {
+  width: 550px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+/* About Section */
+.header {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  padding: 60px 10px 10px 10px;
+  margin-top: 25px;
+}
+
+.about-para {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.certificates {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.certificate {
+  width: 30%;
+  box-shadow: 0px 1.5px 2px rgb(254, 216, 121);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 50px 10px;
+  border: 1px solid greenyellow;
+   transition: 0.3s ease;
+
+}
+
+.certificate h3{
+  padding: 10px 0;
+  color: #0f3703;
+  
+}
+
+.certificate h4{
+  color: rgb(69, 68, 68);
+}
+
+.certificate:hover {
+  transform: scale(1.1); /* width + height both */
+  transition: transform 0.3s ease-out;
+  box-shadow: 1px 3px 2px goldenrod;
+}
+
+.logos {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.logos img {
+  width: 70px;
+  height: 70px;
+}
+
+.skill-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+/* The background track for the skill meter */
+.skill-track {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 15px 10px;
+}
+
+/* Base style for all filled indicators */
+.skill-fill {
+  text-align: right;
+  padding: 2px;
+  color: rgb(6, 5, 5);
+  font-weight: bold;
+  border-radius: 12px;
+  animation-fill-mode: forwards;
+}
+/* Set unique skill ratings using the width property */
+.css-skill {
+  width: 60%;
+  background: linear-gradient(to right, #af8000, #f9bc15, #f8d36d);
+  animation: loadCss 2s ease-out forwards;
+}
+
+.js-skill {
+  width: 50%;
+  background: linear-gradient(to right, #b1ba02, #e9f507, #eef840);
+  animation: loadJs 2s ease-out forwards;
+}
+
+.mern-skill {
+  width: 40%;
+  background: linear-gradient(to right, #779f02, #bdf909, #c8f542);
+  animation: loadMern 2s ease-out forwards;
+}
+
+.sql-skill {
+  width: 60%;
+  background: linear-gradient(to right, #289905, #d7fa62, #c8f542);
+  animation: loadSql 2s ease-out forwards;
+}
+
+.contact-container {
+  width: 50%;
+  height: auto;
+  margin: 50px auto;
+  padding: 70px;
+  background: linear-gradient(135deg, #d3f8bf 0%, #d2f879 100%);
+  border-radius: 50px;
+}
+
+.contact-container .input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(109, 249, 109);
+  background-color: #e5fba2;
+  border-radius: 20px;
+  
+}
+
+.input::placeholder, textarea.input::placeholder{
+  font-style:normal;
+}
+
+.input:focus{
+  border: none;
+  border-bottom: 1px solid rgb(109, 249, 109);
+  box-shadow: 0 0 8px #c8f542;
+  outline: none;
+}
+
+.send-btn button {
+  background: var(--secondary-color);
+  border: none;
+  padding: 15px;
+  width: 45%;
+  color: white;
+  font-size: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.send-btn {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+footer {
+  text-align: center;
+  margin: 160px 0px 0px 0px;
+  background: #1b3502;
+  padding: 20px;
+  color: gray;
+  font-size: 12px;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.linkedin {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-links {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+gap: 20px;
+  margin: 10px auto;
+}
+
+@keyframes loadCss{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes loadJs{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
+@keyframes loadMern{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+@keyframes loadSql{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .home-container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-name{
+    font-size: 34px;
+  }
+
+  .home-container p{
+    font-size: 14px;
+  }
+
+  .profile-pic{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .certificates{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate{
+    width: 80%;
+  }
+
+  .skills{
+    margin-top: 3rem;
+  }
+
+  .contact-container{
+    width: 90%;
+    padding: 30px;
+  }
+
+
+}
