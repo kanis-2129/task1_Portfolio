@@ -373,11 +373,6 @@ footer img:hover {
 @keyframes loadMern { 100% { width: 40%; } }
 @keyframes loadSql  { 100% { width: 60%; } }
 
-
-/* ==========================================
-   --- MASTER DARK MODE OVERRIDES (.dark-mode) ---
-   ========================================== */
-
 .dark-mode {
   --bg-body: #121212;
   --text-main: #e0e0e0;
