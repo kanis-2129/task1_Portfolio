@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <p>KK</p>
       <nav>
         <ul id="nav-li">
-          <li><a href="home-container">Home</a></li>
+          <li><a href="#home-container">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="toggle">
+  <div class="toggleLight">🌞</div>
+  <!-- Kile ulla line background static icon-aga irukkum -->
+  <div class="toggleDark"></div> 
+</div>
+
     </header>
     <!-- Home Screen -->
     <section id="home-container">
@@ -41,14 +51,12 @@
     <section id="about">
       <div class="about-container">
         <h1 class="header">About Me</h1>
-  
-          <p class="about-para">
-            I’m an MCA student passionate about MERN stack development and UI/UX
-            design. I have strong skills in HTML, CSS3 , Java Script and
-            Tailwind CSS, and I’m actively building modern, responsive web
-            projects.
-          </p>
-       
+
+        <p class="about-para">
+          I’m an MCA student passionate about MERN stack development and UI/UX
+          design. I have strong skills in HTML, CSS3 , Java Script and Tailwind
+          CSS, and I’m actively building modern, responsive web projects.
+        </p>
 
         <div class="certificates">
           <div class="certificate">
@@ -90,7 +98,7 @@
           <div class="skill-fill mern-skill">40%</div>
         </div>
 
-         <p>MySQL</p>
+        <p>MySQL</p>
         <div class="skill-track">
           <div class="skill-fill sql-skill">60%</div>
         </div>
@@ -99,26 +107,29 @@
     <!-- Contact -->
     <section id="contact">
       <h1 class="header">Contact</h1>
-      <div class="contact-container glass-card">
+      <form class="contact-container glass-card">
         <label for="name">
-          <input type="text" class="input" placeholder="Enter your name" />
+          <input type="text" id="name" class="input" placeholder="Enter your name" />
         </label>
         <br />
 
         <label for="Email">
-          <input type="email" class="input" placeholder="Enter your Email" />
+          <input type="email" id="mail" class="input" placeholder="name@gmail.com" />
+          <p class="mail-error">Enter valid Email Id</p>
         </label>
         <br />
 
         <textarea
           name="desc"
           class="input"
+          id="msg"
           placeholder="Enter your message"
+          
         ></textarea>
-        <div class="send-btn">
-          <button >Send</button>
+        <div class="send-btn" >
+          <button>Send</button>
         </div>
-      </div>
+      </form>
     </section>
 
     <!-- Footer -->
@@ -128,16 +139,15 @@
           <img src="./images/github-logo.png" alt="github" />
         </a>
         <a href="https://www.linkedin.com/in/kaneeswari-k/">
-        
           <img
-          
             class="linkedin"
             src="./images/linkedin-logo.webp"
             alt="linkedin"
           />
         </a>
       </div>
-      <p>&copy; 2024 Kaneeswari K. All rights reserved.</p>
+      <p>&copy; 2026 Kaneeswari K. All rights reserved.</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
